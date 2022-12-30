@@ -8,7 +8,9 @@
     "dev": "nodemon --legacy-watch --exec npx ts-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --build --clean && tsc --build && tsc-alias",
-    "start": "node index.js"
+    "start": "node index.js",
+    "buildimage": "docker build -t bentak/google_authentication .",
+    "pushimage": "docker push bentak/google_authentication"
   },
   "author": "",
   "license": "ISC",
