@@ -103,9 +103,3 @@ app.post('/logout', async (req:Request, res:Response) => {
 app.listen(port, () => {
   console.log(`App running at port ${port}`);
 });
-
-// Client ID
-// 934173952337-ejc5hhli75b4vmghqjjc6jiufomptit2.apps.googleusercontent.com
-
-// Client secret
-// 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
