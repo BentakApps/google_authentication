@@ -2,7 +2,7 @@ import * as fs from 'fs';
 
 const readSecret = (secretName: string) => {
   try {
-    return fs.readFileSync(`/run/secrets/${secretName}`, 'utf-8');
+    return fs.readFileSync(`/run/secrets/${secretName}`, 'utf-8').trim();
   } catch (err:any) {
     if (err.code !== 'ENOENT') {
       console.error(`An error occurred while trying to read the secret: ${secretName}. Err: ${err}`);
